@@ -1,0 +1,35 @@
+# 🧼 Python Artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 📦 Environment Files
+.env
+.venv/
+*.egg-info/
+pip-wheel-metadata/
+*.log
+
+# 📁 OS Files
+.DS_Store
+Thumbs.db
+
+# 🧪 Jupyter Notebooks
+.ipynb_checkpoints/
+
+# 🔍 Model Output
+model/*.pkl
+logs/
+monitoring/
+*.metrics.json
+
+# 📄 PDF & Diagrams
+docs/*.pdf
+docs/*.png
+
+# ⚙️ Config Files
+config.yaml
+
+# 🗃️ VSCode & IDE
+.vscode/
+.idea/
