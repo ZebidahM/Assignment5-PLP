@@ -1,0 +1,28 @@
+# This YAML file stores model settings and dataset paths so you can keep them consistent across training, evaluation, and deployment. It’s clean, editable, and allows for fast experimentation.
+yaml
+# model/config.yaml
+
+# 🔧 Model Hyperparameters
+model:
+  type: "logistic_regression"
+  max_iter: 1000
+  penalty: "l1"
+  solver: "liblinear"
+  random_state: 42
+
+# 📊 Features to Include
+features:
+  - age_scaled
+  - length_of_stay_scaled
+  - prior_admissions
+  - med_complexity_score
+
+# 🧾 Dataset Configuration
+data:
+  path: "data/patient_data.csv"
+  label_column: "readmitted"
+  test_size: 0.3
+
+# 📁 Model Save Path
+output:
+  model_path: "model/readmission_model.pkl"
