@@ -1,6 +1,6 @@
 # This script trains a Logistic Regression model using your preprocessed and feature-engineered dataset. It also saves the trained model using joblib for future use in deployment.
 python
-# model_train.py
+# model/train.py
 
 import pandas as pd
 import joblib
